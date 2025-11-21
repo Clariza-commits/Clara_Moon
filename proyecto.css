@@ -1,0 +1,382 @@
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: lucida calligraphy;
+}
+
+body{
+    background-image: url('descarga1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+/* HEADER */ 
+header{
+    width: 100%;
+    height: auto;
+    padding: 40px 20px;
+}
+#h1{
+    width: 30ch;
+    margin: 100px 40px;
+    color: white;
+    text-shadow: 10px 10px 10px #ff69b4;
+    font-size: 170px;
+    overflow: hidden;
+    animation: typing 2s steps(30) infinite alternate-reverse;
+}
+@keyframes typing{
+    from{
+     width: 0ch; 
+   }
+}
+ 
+
+
+
+/* BANNER */
+.banner{
+    text-align: center;
+}
+#h2principal{
+    color: white;
+    font-size: 87px;
+    background: #ff69b4;
+    padding: 20px;
+    text-align: center;
+}
+.parrafo1{
+    font-size: 40px;
+    padding: 20px;
+    background: #ff69b4;
+    color: white;
+}
+/* BOTONES */
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    background: #ff69b4;
+    padding: 25px;
+}
+.btn{
+    background: white;
+    padding: 20px 30px;
+    border-radius: 40px;
+    color: #FF4FA2;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.btn:hover{
+    background: #FFD6E9;
+    transform: scale(1.1);
+}
+
+
+
+
+/* SECCIONES */
+.comentarios1, .comentarios2, .comentarios3, .comentarios4{
+    width: 100%;
+    background: #ffd6e9;
+    border-radius: 30px;
+    margin: 40px 0;
+    padding: 30px;
+}
+#dos{
+    color: #ff69b4;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+
+
+
+
+/* CARRUSEL */
+.tren{
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+.slides{
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+.slides .img2{
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ffc9de;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+}
+.prev{ left: 10px; }
+.next{ right: 10px; }
+
+
+
+
+
+/* PRODUCTOS - GRID */
+.flexwrap{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+    justify-content: center;
+}
+.columna{
+    width: 22%;
+    min-width: 260px;
+    text-align: center;
+}
+.columna img{
+    width: 100%;
+    height: 700px;
+    max-height: 700px;
+    border-radius: 30px;
+}
+.columna h2{
+    color: #ff1493;
+    font-size: 40px;
+}
+.columna p{
+    font-size: 35px;
+    color: #222;
+}
+
+
+
+
+/* ASIDE (PUBLICIDAD) */
+aside{
+    width: 25%;
+    float: right;
+    height: 1900px;
+    min-height: 300px;
+    background: #ff69b4;
+    padding: 20px;
+    color: white;
+    font-size: 35px;
+    overflow: auto;
+    border-radius: 20px;
+}
+aside ul li{
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* COMENTARIOS */
+.carouselgeneral{
+	position: relative;
+	width: 100%;
+	max-width: 800px;
+	margin: 10px auto;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.carouselcoment{
+	display: flex;
+	width: 800%;
+	transition: transform 0.5s ease-in-out;
+}
+.carouselcoment{
+	width: 800%;
+	height: auto;
+}
+.img1{
+	width: 900%;
+	height: auto;
+}
+.carousel-wrapper{
+    animation: autoSlide 12s infinite;
+}
+.carouselgeneral:hover .carousel-wrapper{
+	animation-play-state: paused;
+}
+@keyframes autoSlide{
+	0%     {transform: translateX(0%);}
+    12.5%    {transform: translateX(-100%);}
+	25%    {transform: translateX(-200%);}
+	37.5%    {transform: translateX(-300%);}
+	50%    {transform: translateX(-400%);}
+	62.5%    {transform: translateX(-500%);}
+	75%    {transform: translateX(-600%);}
+	87.5%    {transform: translateX(-700%);}
+	100%   {transform: translateX(0%);}	
+}
+
+
+
+
+/* FORMULARIO */
+form{
+    width: 1500px;
+    margin: 0 auto;
+    background: #ffa07a;
+    padding: 30px;
+    border-radius: 30px;
+}
+fieldset{
+    border-radius: 20px;
+    border: 10px double mediumvioletred;
+    padding: 25px;
+    font-size: 35px;
+}
+legend{
+    font-size: 40px;
+    border: 5px solid mediumvioletred;
+    padding: 10px;
+}
+input{
+    width: 100%;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+}
+button{
+    padding: 20px;
+    font-size: 35px;
+    border-radius: 15px;
+}
+
+
+
+
+
+/* FOOTER */
+footer{
+    width: 100%;
+    padding: 40px;
+    background: #ff69b4;
+    text-align: center;
+    color: white;
+}
+#uno{
+    font-size: 60px;
+    text-shadow: 10px 10px 10px #ff69b4;
+}
+.pie{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+.pie li a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+    padding: 10px 20px;
+}
+
+
+
+
+
+/* ------------------------------ */
+/* 📱 RESPONSIVE TABLET */
+/* ------------------------------ */
+@media (max-width: 1024px){
+    #h1{ font-size: 100px; }
+
+    .columna{
+        width: 45%;
+    }
+
+    aside{
+        width: 100%;
+        float: none;
+        height: auto;
+        margin-top: 25px;
+        display: none;
+    }
+
+    form{
+        width: 90%;
+    }
+}
+
+
+
+
+
+/* ------------------------------ */
+/* 📱 RESPONSIVE CELULAR */
+/* ------------------------------ */
+@media (max-width: 768px){
+
+    #h1{ font-size: 60px; }
+
+    #h2principal, .banner{
+        font-size: 25px;
+    }
+
+    .parrafo1{
+        font-size: 25px;
+    }
+
+    .btn{
+        font-size: 25px;
+        padding: 10px 15px;
+    }
+
+    .columna{
+        width: 100%;
+    }
+
+    .columna img{
+        max-height: 300px;
+    }
+
+    aside{
+        display: none;  /* publicidad oculta en celular */
+    }
+
+    form{
+        width: 100%;
+        padding: 20px;
+    }
+
+    input{
+        font-size: 20px;
+    }
+
+    #uno{
+        font-size: 40px;
+    }
+
+    .pie{
+        flex-direction: column;
+    }
+}
